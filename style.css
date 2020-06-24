@@ -1,0 +1,78 @@
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+#wallpaper-wrapper {
+    background: url("wallpaper.jpeg");
+    width: 100%;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animation 200s linear infinite;
+}
+
+@keyframes animation {
+    100% {
+        background-position: 0px -3450px;
+    }
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: 10em;
+    color: #fafafa;
+}
+
+ul {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    list-style-type: none;
+}
+
+li>a {
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background-size: 90px;
+    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#github {
+    background-image: url("github-64-light.png");
+}
+
+#linkedin {
+    background-image: url("LinkedIn-In-Black.png");
+}
+
+#languages>#text-rotator-wrapper {
+    border-right: 0.04em solid rgb(216, 216, 216);
+    animation: terminal-blink 1s step-end infinite;
+    font-size: 0.7em;
+}
+
+@keyframes terminal-blink {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: rgb(194, 194, 194)
+    }
+}
